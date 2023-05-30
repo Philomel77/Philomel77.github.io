@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 夜莺的BLOG</title>
-        <link>https://philomel.github.io/post/</link>
+        <link>https://philomel77.github.io/post/</link>
         <description>Recent content in Posts on 夜莺的BLOG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 27 Jun 2022 11:34:54 -0700</lastBuildDate><atom:link href="https://philomel.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 30 May 2023 16:06:27 +0800</lastBuildDate><atom:link href="https://philomel77.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>【Test】这是一篇测试文章</title>
+        <link>https://philomel77.github.io/post/test%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Tue, 30 May 2023 16:06:27 +0800</pubDate>
+        
+        <guid>https://philomel77.github.io/post/test%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
+        <description>&lt;h2 id=&#34;这是文章标题&#34;&gt;这是文章标题&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>【Android】Native 应用入门-环境搭建</title>
-        <link>https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+        <link>https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Mon, 27 Jun 2022 11:34:54 -0700</pubDate>
         
-        <guid>https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
-        <description>&lt;img src="https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/cover.jpg" alt="Featured image of post 【Android】Native 应用入门-环境搭建" /&gt;&lt;p&gt;近来尝试了很多可部署开源阅读器项目，但大多体验都不太理想，&lt;code&gt;Calibre-Web&lt;/code&gt;​将阅读记录储存在了浏览器缓存中，注定了它对我来说只是个半成品。&lt;code&gt;Reader&lt;/code&gt;​网页版，是个不错的选择，但是奈何鄙人不会 Kotlin ，再一个就是本身项目对二次开发好像也不太友好，固放弃。&lt;/p&gt;
+        <guid>https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid>
+        <description>&lt;img src="https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/cover.jpg" alt="Featured image of post 【Android】Native 应用入门-环境搭建" /&gt;&lt;p&gt;近来尝试了很多可部署开源阅读器项目，但大多体验都不太理想，&lt;code&gt;Calibre-Web&lt;/code&gt;​将阅读记录储存在了浏览器缓存中，注定了它对我来说只是个半成品。&lt;code&gt;Reader&lt;/code&gt;​网页版，是个不错的选择，但是奈何鄙人不会 Kotlin ，再一个就是本身项目对二次开发好像也不太友好，固放弃。&lt;/p&gt;
 &lt;p&gt;转念一想，自己开发一个 Android App 不就好了，多的不说，直接开始搞俩哈。&lt;/p&gt;
 &lt;h2 id=&#34;开始&#34;&gt;开始&lt;/h2&gt;
 &lt;p&gt;WebView 是不可能 WebView的，这辈子都不可能WebView的。真男人就要干 Native！&lt;/p&gt;
@@ -29,10 +38,10 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;首先在 IDEA 中新建项目，选择 Android，没有安装相关 SDK 的朋友，需要先下载安装相关的开发工具包，这里建议 IDEA 设置中开启科学上网。&lt;/p&gt;
-&lt;p&gt;​&lt;img src=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png&#34;
+&lt;p&gt;​&lt;img src=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1.png&#34;
 	width=&#34;1826&#34;
 	height=&#34;1442&#34;
-	srcset=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1_hu1c4df239d417f72058ed768f5a5dfc68_154038_480x0_resize_box_3.png 480w, https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1_hu1c4df239d417f72058ed768f5a5dfc68_154038_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1_hu1c4df239d417f72058ed768f5a5dfc68_154038_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/1_hu1c4df239d417f72058ed768f5a5dfc68_154038_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image&#34;
@@ -44,10 +53,10 @@
 	
 &gt;​&lt;/p&gt;
 &lt;p&gt;下载完成后新建一个 Android 项目，选择&lt;code&gt;Phone and Tablet&lt;/code&gt;​中的&lt;code&gt;Basic Activity&lt;/code&gt;​，我这边选择使用 Java 语言进行开发，项目名叫啥都行&lt;/p&gt;
-&lt;p&gt;​&lt;img src=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png&#34;
+&lt;p&gt;​&lt;img src=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2.png&#34;
 	width=&#34;2520&#34;
 	height=&#34;1613&#34;
-	srcset=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2_hu06bff0336942fb0539aa8a6a13785f75_919453_480x0_resize_box_3.png 480w, https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2_hu06bff0336942fb0539aa8a6a13785f75_919453_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2_hu06bff0336942fb0539aa8a6a13785f75_919453_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/2_hu06bff0336942fb0539aa8a6a13785f75_919453_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image&#34;
@@ -62,10 +71,10 @@
 &lt;h2 id=&#34;打包运行&#34;&gt;打包运行&lt;/h2&gt;
 &lt;p&gt;可以看到我们当前选择的默认模板已经给我们搭建好了基本的框架，也就是说现在项目可以直接打包运行了。接下来先确保手机处于可以调试的状态，先是打开手机的开发者模式，在开发者选项中打开&lt;code&gt;USB调试&lt;/code&gt;​以及&lt;code&gt;通过USB安装&lt;/code&gt;​这两项，小米系手机如果到这一步还是不行的话，可以尝试关闭开发者选项中的&lt;code&gt;MIUI优化&lt;/code&gt;​。&lt;/p&gt;
 &lt;p&gt;点击右上角&lt;code&gt;运行&lt;/code&gt;​&lt;/p&gt;
-&lt;p&gt;​&lt;img src=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png&#34;
+&lt;p&gt;​&lt;img src=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3.png&#34;
 	width=&#34;2520&#34;
 	height=&#34;1613&#34;
-	srcset=&#34;https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3_huaaa4f5e47a6f62a5011f21ed4c355e62_1284418_480x0_resize_box_3.png 480w, https://philomel.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3_huaaa4f5e47a6f62a5011f21ed4c355e62_1284418_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3_huaaa4f5e47a6f62a5011f21ed4c355e62_1284418_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/androidnative-%E5%BA%94%E7%94%A8%E5%85%A5%E9%97%A8-%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/3_huaaa4f5e47a6f62a5011f21ed4c355e62_1284418_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image&#34;
@@ -81,11 +90,11 @@
         </item>
         <item>
         <title>【Java】SiYuan 实现 Epub 阅读</title>
-        <link>https://philomel.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/</link>
+        <link>https://philomel77.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/</link>
         <pubDate>Mon, 13 Jun 2022 08:50:54 -0700</pubDate>
         
-        <guid>https://philomel.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/</guid>
-        <description>&lt;img src="https://philomel.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/cover.jpg" alt="Featured image of post 【Java】SiYuan 实现 Epub 阅读" /&gt;&lt;p&gt;先短暂的解决一下阅读需求，写一个简单的 Java 推送 SiYuan 程序，实现起来也非常简单。&lt;/p&gt;
+        <guid>https://philomel77.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/</guid>
+        <description>&lt;img src="https://philomel77.github.io/post/javasiyuan-%E5%AE%9E%E7%8E%B0-epub-%E9%98%85%E8%AF%BB/cover.jpg" alt="Featured image of post 【Java】SiYuan 实现 Epub 阅读" /&gt;&lt;p&gt;先短暂的解决一下阅读需求，写一个简单的 Java 推送 SiYuan 程序，实现起来也非常简单。&lt;/p&gt;
 &lt;p&gt;事先准备好 SiYuan 的 &lt;code&gt;Token&lt;/code&gt;​&lt;/p&gt;
 &lt;p&gt;Maven 依赖&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--  电子书解析器  --&amp;gt;&lt;/span&gt;
@@ -166,11 +175,11 @@
         </item>
         <item>
         <title>【Telegraph】搭建静态博客/图床</title>
-        <link>https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</link>
+        <link>https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</link>
         <pubDate>Mon, 30 May 2022 15:36:54 -0700</pubDate>
         
-        <guid>https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</guid>
-        <description>&lt;img src="https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover.jpg" alt="Featured image of post 【Telegraph】搭建静态博客/图床" /&gt;&lt;p&gt;前排提示，本文使用方法搭建出来的静态博客需要科学上网才能访问。&lt;/p&gt;
+        <guid>https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/</guid>
+        <description>&lt;img src="https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover.jpg" alt="Featured image of post 【Telegraph】搭建静态博客/图床" /&gt;&lt;p&gt;前排提示，本文使用方法搭建出来的静态博客需要科学上网才能访问。&lt;/p&gt;
 &lt;h3 id=&#34;开始&#34;&gt;开始&lt;/h3&gt;
 &lt;p&gt;我们先来看看 Telegraph 是个啥子东东，这是官网的介绍&lt;/p&gt;
 &lt;blockquote&gt;
@@ -279,10 +288,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;｝&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;从回调参数获取 &lt;code&gt;url&lt;/code&gt; 。&lt;/p&gt;
 &lt;h3 id=&#34;文章示例&#34;&gt;文章示例&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365.png&#34;
 	width=&#34;1182&#34;
 	height=&#34;904&#34;
-	srcset=&#34;https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_480x0_resize_box_3.png 480w, https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;BlogPage&#34;
@@ -297,11 +306,11 @@
         </item>
         <item>
         <title>【TelegarmBot】与SpringBoot整合</title>
-        <link>https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/</link>
+        <link>https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/</link>
         <pubDate>Tue, 10 May 2022 10:37:54 -0700</pubDate>
         
-        <guid>https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/</guid>
-        <description>&lt;img src="https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/cover.svg" alt="Featured image of post 【TelegarmBot】与SpringBoot整合" /&gt;&lt;p&gt;上篇文章已经实现了如何设置 Webhook 并实现 &lt;del&gt;复读&lt;/del&gt; 功能，但是仅仅是这样显然是不够的，为了让 Bot 功能更强大，程序更具有健壮性，我们可以将 Bot 与 SpringBoot 整合。&lt;/p&gt;
+        <guid>https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/</guid>
+        <description>&lt;img src="https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/cover.svg" alt="Featured image of post 【TelegarmBot】与SpringBoot整合" /&gt;&lt;p&gt;上篇文章已经实现了如何设置 Webhook 并实现 &lt;del&gt;复读&lt;/del&gt; 功能，但是仅仅是这样显然是不够的，为了让 Bot 功能更强大，程序更具有健壮性，我们可以将 Bot 与 SpringBoot 整合。&lt;/p&gt;
 &lt;p&gt;基于 Bot 接口是 HTTP 协议的，所以不管是什么语言，整合起来都是没有什么困难的。比如说 Python ，Telegram 官方甚至提供了SDK。&lt;/p&gt;
 &lt;h3 id=&#34;依赖引入&#34;&gt;依赖引入&lt;/h3&gt;
 &lt;ol&gt;
@@ -353,10 +362,10 @@ Use this method to specify a URL and receive incoming updates via an outgoing we
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	System&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;out&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;println&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;json&lt;span style=&#34;color:#f92672&#34;&gt;);&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;尝试发送一条文字消息。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image.png&#34;
 	width=&#34;1016&#34;
 	height=&#34;333&#34;
-	srcset=&#34;https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image_hu38d745301c969acda80b0db4c3e1b169_172113_480x0_resize_box_3.png 480w, https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image_hu38d745301c969acda80b0db4c3e1b169_172113_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image_hu38d745301c969acda80b0db4c3e1b169_172113_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image_hu38d745301c969acda80b0db4c3e1b169_172113_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;/emoji&#34;
@@ -400,10 +409,10 @@ Use this method to specify a URL and receive incoming updates via an outgoing we
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其中 &lt;code&gt;text&lt;/code&gt; 就是发送的消息内容&lt;/p&gt;
 &lt;p&gt;接下来依据 json 结构编写实体类，这里可以使用 &lt;code&gt;GsonFormatPlus&lt;/code&gt; 工具自动生成&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350.png&#34;
 	width=&#34;1054&#34;
 	height=&#34;429&#34;
-	srcset=&#34;https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350_hu2fb4eaeab24fb6c01789e9b1150ef3ab_262586_480x0_resize_box_3.png 480w, https://philomel.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350_hu2fb4eaeab24fb6c01789e9b1150ef3ab_262586_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350_hu2fb4eaeab24fb6c01789e9b1150ef3ab_262586_480x0_resize_box_3.png 480w, https://philomel77.github.io/post/telegarmbot%E4%B8%8Espringboot%E6%95%B4%E5%90%88/image-1660265086350_hu2fb4eaeab24fb6c01789e9b1150ef3ab_262586_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;entity&#34;
@@ -482,11 +491,11 @@ Use this method to send text messages. On success, the sent Message is returned.
         </item>
         <item>
         <title>【TelegramBot】从0开始的Webhook自动应答</title>
-        <link>https://philomel.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/</link>
+        <link>https://philomel77.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/</link>
         <pubDate>Thu, 21 Apr 2022 08:36:54 -0700</pubDate>
         
-        <guid>https://philomel.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/</guid>
-        <description>&lt;img src="https://philomel.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/cover.jpg" alt="Featured image of post 【TelegramBot】从0开始的Webhook自动应答" /&gt;&lt;p&gt;众所周知，TG提供着一个近乎无线容量的个人云空间，同时TG拥有信息、资源聚合的特性，以及功能完备的机器人接口、对开发者友好的开放平台。
+        <guid>https://philomel77.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/</guid>
+        <description>&lt;img src="https://philomel77.github.io/post/telegrambot%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84webhook%E8%87%AA%E5%8A%A8%E5%BA%94%E7%AD%94/cover.jpg" alt="Featured image of post 【TelegramBot】从0开始的Webhook自动应答" /&gt;&lt;p&gt;众所周知，TG提供着一个近乎无线容量的个人云空间，同时TG拥有信息、资源聚合的特性，以及功能完备的机器人接口、对开发者友好的开放平台。
 鉴于以上，目前我的想法是做一个，可以&lt;strong&gt;索引公共信息&lt;/strong&gt;并且&lt;strong&gt;聚合信息&lt;/strong&gt;同时提供&lt;strong&gt;私有云上传/下载&lt;/strong&gt;服务功能的自动化机器人。
 该 @Bot 教程后续通过 &lt;strong&gt;Java&lt;/strong&gt; 平台持续开发。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;一共是三个功能点。&lt;/strong&gt;&lt;/p&gt;
