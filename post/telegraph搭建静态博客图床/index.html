@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='这是简介'>
+<title>【Telegraph】搭建静态博客/图床</title>
+
+<link rel='canonical' href='https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/'>
+
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='【Telegraph】搭建静态博客/图床'>
+<meta property='og:description' content='这是简介'>
+<meta property='og:url' content='https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/'>
+<meta property='og:site_name' content='夜莺的BLOG'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-05-30T15:36:54-07:00'/><meta property='article:modified_time' content='2022-05-30T15:36:54-07:00'/><meta property='og:image' content='https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover.jpg' />
+<meta name="twitter:title" content="【Telegraph】搭建静态博客/图床">
+<meta name="twitter:description" content="这是简介"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://philomel.github.io/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu18f48d89a31655df53fa0e6e765c5330_47948_300x0_resize_box_3.png" width="300"
+                            height="267" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">😃</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">夜莺的BLOG</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Philomel77'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1675064517594" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11883" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M938.666667 512a426.666667 426.666667 0 0 1-291.84 404.48 22.186667 22.186667 0 0 1-19.2-2.986667 21.76 21.76 0 0 1-8.96-17.493333v-113.92a170.666667 170.666667 0 0 0-21.333334-87.893333 10.666667 10.666667 0 0 1 0-11.52 11.52 11.52 0 0 1 8.533334-5.973334c104.106667-10.666667 162.133333-52.053333 162.133333-164.693333a200.96 200.96 0 0 0-50.773333-143.36 183.466667 183.466667 0 0 0 8.106666-51.2 184.746667 184.746667 0 0 0-6.4-46.08 20.906667 20.906667 0 0 0-22.613333-15.36 189.866667 189.866667 0 0 0-104.106667 50.346667 422.826667 422.826667 0 0 0-160.426666 0A189.866667 189.866667 0 0 0 327.68 256a20.906667 20.906667 0 0 0-22.613333 15.36A184.746667 184.746667 0 0 0 298.666667 317.44a183.466667 183.466667 0 0 0 8.106666 51.2A200.96 200.96 0 0 0 256 512c0 118.613333 64.426667 158.293333 182.613333 168.106667a158.293333 158.293333 0 0 0-29.44 65.28v5.12a29.013333 29.013333 0 0 0 0 5.973333 25.173333 25.173333 0 0 1-27.306666 21.76 42.666667 42.666667 0 0 1-18.346667-5.12 227.84 227.84 0 0 1-60.586667-53.76 430.506667 430.506667 0 0 0-34.133333-34.56 116.906667 116.906667 0 0 0-25.173333-16.64 20.906667 20.906667 0 0 0-20.48 0 21.333333 21.333333 0 0 0-9.813334 17.92v2.56a21.333333 21.333333 0 0 0 9.813334 17.92 193.706667 193.706667 0 0 1 39.253333 44.8 282.026667 282.026667 0 0 0 67.84 73.386667 105.813333 105.813333 0 0 0 59.733333 17.92h15.36V896a21.76 21.76 0 0 1-8.96 17.493333 22.186667 22.186667 0 0 1-19.2 2.986667A426.666667 426.666667 0 1 1 938.666667 512z" p-id="11884" fill="#bababa"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:polofus@outlook.com'
+                        target="_blank"
+                        title="Mail"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1675064586103" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="12501" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M853.333333 170.666667H170.666667a85.333333 85.333333 0 0 0-85.333334 85.333333v512a85.333333 85.333333 0 0 0 85.333334 85.333333h682.666666a85.333333 85.333333 0 0 0 85.333334-85.333333V256a85.333333 85.333333 0 0 0-85.333334-85.333333z m0 85.333333v123.733333l-313.6 219.733334a48.64 48.64 0 0 1-55.466666 0L170.666667 379.733333V256zM170.666667 768v-298.666667l270.933333 189.44a122.88 122.88 0 0 0 140.8 0L853.333333 469.333333v298.666667z" p-id="12502" fill="#bababa"></path></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/Philomel7'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1675064527910" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="12097" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><path d="M912.213333 154.026667A85.333333 85.333333 0 0 0 853.333333 128a85.333333 85.333333 0 0 0-33.28 6.826667l-708.266666 306.773333a42.666667 42.666667 0 0 0-26.453334 42.666667V512a42.666667 42.666667 0 0 0 29.44 42.666667L298.666667 616.106667l55.466666 187.306666a75.946667 75.946667 0 0 0 56.32 53.333334 62.72 62.72 0 0 0 15.36 0 73.813333 73.813333 0 0 0 50.773334-20.48l67.84-64 131.413333 103.68a85.333333 85.333333 0 0 0 90.026667 9.386666l14.08-7.253333a88.32 88.32 0 0 0 46.506666-62.72L938.666667 235.093333a90.026667 90.026667 0 0 0-26.453334-81.066666zM763.733333 805.12a25.173333 25.173333 0 0 1-12.8 17.493333l-14.08 7.253334a19.626667 19.626667 0 0 1-8.96 2.133333 19.626667 19.626667 0 0 1-12.373333-4.693333l-160.426667-128a20.906667 20.906667 0 0 0-27.733333 0l-94.72 89.173333a11.093333 11.093333 0 0 1-5.973333 2.133333V640a21.76 21.76 0 0 1 6.826666-15.786667c136.106667-128 217.6-199.68 266.24-240.64a15.786667 15.786667 0 0 0 5.12-11.093333 13.653333 13.653333 0 0 0-4.266666-11.093333 14.933333 14.933333 0 0 0-17.92-4.266667l-322.56 203.52a21.333333 21.333333 0 0 1-18.346667 0L149.333333 494.933333l694.186667-301.226666a16.64 16.64 0 0 1 7.68 0 22.186667 22.186667 0 0 1 16.213333 7.68 26.88 26.88 0 0 1 6.826667 23.466666z" p-id="12098" fill="#bababa"></path></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/gallery' >
+                
+                
+                
+                <span>图床</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/essay/' >
+                
+                
+                
+                <span>随笔</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Dark Mode</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/">
+                <img src="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover_hu4231234965c402f5b071dc3bf8bd12ee_1400271_800x0_resize_q75_box.jpg"
+                        srcset="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover_hu4231234965c402f5b071dc3bf8bd12ee_1400271_800x0_resize_q75_box.jpg 800w, /post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/cover_hu4231234965c402f5b071dc3bf8bd12ee_1400271_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post 【Telegraph】搭建静态博客/图床" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/">【Telegraph】搭建静态博客/图床</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            这是简介
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 30, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>前排提示，本文使用方法搭建出来的静态博客需要科学上网才能访问。</p>
+<h3 id="开始">开始</h3>
+<p>我们先来看看 Telegraph 是个啥子东东，这是官网的介绍</p>
+<blockquote>
+<p>Telegraph 并不强调内容管理方这一概念，真正做到了「人人都是媒体」。通过 Telegraph 发布的文章，理论上来说不会存在删除的危险，并且由于会产生一个独立的网址链接，所以我们发布的内容可以完全公开在万维网上。我们可以随时随地、匿名发布任何消息，一切不会受到任何监管。「匿名、不受监管」，这应该就是 Telegraph 所强调的自由。</p>
+</blockquote>
+<p>简单来说，只要进入 <a class="link" href="https://telegra.ph"  target="_blank" rel="noopener"
+    >https://telegra.ph</a> 并编辑本章，点击 <code>Publish</code> ，你的文章就会被匿名地公开到万维网，并且长期保存。 Telegraph 支持上传图片、MarkDown格式。这些操作并不需要你注册 Telegram 账户。</p>
+<p>值得注意的是，一旦浏览器清空缓存后，文章将不可再编辑。</p>
+<h3 id="接口发布">接口发布</h3>
+<h4 id="博文">博文</h4>
+<p>发布文章的方式一共有两种，一种就是上面提到的直接在网站中编辑内容。另一种就是通过接口的方式发布。</p>
+<p>接口文档：https://telegra.ph/api</p>
+<p>创建文章接口</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>类型</th>
+<th>是否必须</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>access_token</td>
+<td>String</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>author_name</td>
+<td>String</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>author_url</td>
+<td>String</td>
+<td>Optional</td>
+</tr>
+<tr>
+<td>content</td>
+<td>Array of Node</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>return_content</td>
+<td>Boolean, default = false</td>
+<td>Optional</td>
+</tr>
+</tbody>
+</table></div>
+<p>其中 <code>access_token</code> 通过 <code>createAccount</code> 接口注册获得。</p>
+<p><code>author_url</code> 可以指向任何外链。</p>
+<p><code>content</code> 中的 <code>Node</code> 为类似 HTML 的结构实体组成，如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HtmlNode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> String tag<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span>String<span style="color:#f92672">&gt;</span> attrs<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> List<span style="color:#f92672">&lt;</span>Object<span style="color:#f92672">&gt;</span> children<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>构造 Map ，发送 Http 请求</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">publicBlog</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> imgSrc<span style="color:#f92672">,</span> String topic<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>HtmlNode<span style="color:#f92672">&gt;</span> nodes <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        HtmlNode imgNode <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HtmlNode<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>        Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> map <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String s <span style="color:#f92672">:</span> imgSrc<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> attrsMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>            imgNode<span style="color:#f92672">.</span><span style="color:#a6e22e">setTag</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;img&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            attrsMap<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;src&#34;</span><span style="color:#f92672">,</span> s<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            imgNode<span style="color:#f92672">.</span><span style="color:#a6e22e">setAttrs</span><span style="color:#f92672">(</span>attrsMap<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>s<span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;.jpg&#34;</span><span style="color:#f92672">))</span> nodes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>imgNode<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        HtmlNode topicNode <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HtmlNode<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>        topicNode<span style="color:#f92672">.</span><span style="color:#a6e22e">setTag</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;h3&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> topicChild <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+</span></span><span style="display:flex;"><span>        topicChild<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>topic<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        topicNode<span style="color:#f92672">.</span><span style="color:#a6e22e">setChildren</span><span style="color:#f92672">(</span>Arrays<span style="color:#f92672">.</span><span style="color:#a6e22e">asList</span><span style="color:#f92672">(</span>topicChild<span style="color:#f92672">.</span><span style="color:#a6e22e">toArray</span><span style="color:#f92672">()));</span>
+</span></span><span style="display:flex;"><span>        nodes<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>topicNode<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;access_token&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;1sad2910nc90cn13caw7d2e211dcsa212a&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;PH Second Blog Page&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;author_name&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Philomel&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;author_url&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;https://t.me/xxx&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;content&#34;</span><span style="color:#f92672">,</span> JSON<span style="color:#f92672">.</span><span style="color:#a6e22e">toJSONString</span><span style="color:#f92672">(</span>nodes<span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span>        map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;return_content&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        String resp <span style="color:#f92672">=</span> HttpRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">post</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://api.telegra.ph/createPage&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">useProxy</span><span style="color:#f92672">(</span>PROXY_IP<span style="color:#f92672">,</span> PROXY_PORT<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">form</span><span style="color:#f92672">(</span>map<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> JSON<span style="color:#f92672">.</span><span style="color:#a6e22e">parseObject</span><span style="color:#f92672">(</span>resp<span style="color:#f92672">).</span><span style="color:#a6e22e">getJSONObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;result&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;url&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>接下来访问回调参数中的 <code>url</code> 即可。</p>
+<h4 id="图床">图床</h4>
+<p>图床接口使用：<code>https://telegra.ph/upload</code></p>
+<p>直接构造一个带有 <code>file</code> 的 Http请求 即可：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">uploadTgraph</span><span style="color:#f92672">(</span>File file<span style="color:#f92672">,</span>Proxy proxy<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> HttpUtil<span style="color:#f92672">.</span><span style="color:#a6e22e">createPost</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://telegra.ph/upload&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  			<span style="color:#f92672">.</span><span style="color:#a6e22e">setProxy</span><span style="color:#f92672">(</span>proxy<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>            		<span style="color:#f92672">.</span><span style="color:#a6e22e">form</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;file&#34;</span><span style="color:#f92672">,</span> file<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                    	<span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">.</span><span style="color:#a6e22e">body</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">｝</span>
+</span></span></code></pre></div><p>从回调参数获取 <code>url</code> 。</p>
+<h3 id="文章示例">文章示例</h3>
+<p><img src="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365.png"
+	width="1182"
+	height="904"
+	srcset="/post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_480x0_resize_box_3.png 480w, /post/telegraph%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%9B%BE%E5%BA%8A/image-1660273531365_huabe8a90b5dd613f1f184d4de0db0ca9d_776279_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="BlogPage"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="313px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2023 夜莺的BLOG
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        <a href="https://beian.miit.gov.cn">粤ICP备2022023944号</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
